@@ -56,4 +56,13 @@ public class CustomArray<T extends Object> implements Common<T> {
     public int size() {
         return size;
     }
+
+    public static void main(String[] args) {
+        CustomArray<String> array = new CustomArray<>(100);
+        array.insert("hello");
+        array.insert("world");
+        System.out.println(array.length());
+        System.out.println(array.size());
+        System.out.println(array.find("world"));
+    }
 }
