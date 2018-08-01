@@ -30,6 +30,18 @@ public class SimpleSort {
         }
     }
 
+    public static void insertionSort(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            int temp = array[i];
+            int j = i;
+            while (j > 0 && array[j - 1] >= temp) {
+                array[j] = array[j - 1];
+                j--;
+            }
+            array[j] = temp;
+        }
+    }
+
     public static void swap(int[] array, int i, int j) {
         array[i] = array[i] + array[j] - (array[j] = array[i]);
     }
@@ -37,7 +49,8 @@ public class SimpleSort {
     public static void main(String[] args) {
         int[] a = {5, 10, 78, 1, 9, 8, 10, 43, 11};
         //bubbleSort(a);
-        selectionSort(a);
+        //selectionSort(a);
+        insertionSort(a);
         System.out.println(Arrays.toString(a));
     }
 }
