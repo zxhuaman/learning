@@ -1,4 +1,12 @@
-#info {
-    display: block;
-    margin: auto auto;
+header {
+    background-color: #54d454;
+}
+
+nav {
+    color: azure;
+    font-size: 20px;
+}
+
+h2 {
+    background-color: #54d454;
 }
